@@ -1,12 +1,6 @@
 const router = require('express').Router();
 const Url = require('../models/url');
 
-
-router.route('/')
-.get((req,res) => {
-    res.render('index');
-});
-
 router.route('/:sUrlCode')
 .get((req,res) => {
     const {sUrlCode} = req.params;

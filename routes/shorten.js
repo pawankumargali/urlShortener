@@ -4,7 +4,7 @@ const UniqueId = require('../uniqueId');
 const Url = require('../models/url');
 const checkAuth = require('../checkAuth');
 
-router.route('/:sUrlCode')
+router.route('/')
 .post( checkAuth, (req,res) => {
     sendResponse(req,res);
 });

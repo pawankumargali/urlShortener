@@ -7,7 +7,7 @@ const dbConnect = require('./dbConnect');
 // SERVER CONFIG
 const app = express();
 app.set('view engine','ejs');
-app.use(bodyParser.json());
+app.use(express.json());
 
 // DBCONNECT
 dbConnect();
@@ -19,10 +19,10 @@ const shortenUrlRouter = require('./routes/shorten');
 const getShortUrlRouter = require('./routes/getshortUrl');
 
 // ROUTES
-app.use('/',indexRouter)
+app.use('/', indexRouter);
 app.use('/user', userRouter);
 app.use('/url/shorten', shortenUrlRouter);
-app.use(process.env.HOST_URL, getShortUrlRouter);
+app.use('/',getShortUrlRouter);
 
 
 // SERVER START

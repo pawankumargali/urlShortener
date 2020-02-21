@@ -2,6 +2,7 @@
 require('dotenv').config();
 const express = require('express');
 const dbConnect = require('./dbConnect');
+const path = require('path');
 
 // SERVER CONFIG
 const app = express();

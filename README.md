@@ -24,8 +24,6 @@ Request Header:
 
 Use the JSON web token in request 'Authorization' header for making post requests to url/shorten a long URL otherwise the path returns authentication error
 
-image.png
-
 Request Body:
 
 POST longUrl to the url/shorten route and get the shortUrl as response

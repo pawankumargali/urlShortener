@@ -36,8 +36,7 @@ router.route('/login')
             if(result==true) {
                 const token = jwt.sign({userId:user._id}, process.env.SECRET, {expiresIn:"1h"});
                 res.status(200).json({
-                    msg:`Authentication successful. Add token to Authroization header with bearer for
-                        further requests`,
+                    msg:'Authentication successful. Add token to Authroization header with bearer for further requests',
                     token:token
                 })
             }

@@ -6,7 +6,6 @@ const checkAuth = require('../checkAuth');
 
 router.route('/')
 .post( checkAuth, (req,res) => {
-
     sendResponse(req,res);
 });
 

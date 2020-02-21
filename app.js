@@ -3,7 +3,6 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const dbConnect = require('./dbConnect');
-const CacheConnect = require('./cacheConnect');
 
 // SERVER CONFIG
 const app = express();
@@ -11,10 +10,6 @@ app.use(bodyParser.json());
 
 // DBCONNECT
 dbConnect();
-
-// CacheCONNECT
-CacheConnect();
-
 
 // ROUTERS
 const shortenUrlRouter = require('./routes/shorten');

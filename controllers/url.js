@@ -1,17 +1,18 @@
-const router = require('express').Router();
-const isValidURL = require('../isValidURL');
-const UniqueId = require('../uniqueId');
 const Url = require('../models/url');
-const checkAuth = require('../checkAuth');
+const isValidURL = require('../helpers/isValidURL');
+const UniqueId  = require('../helpers/uniqueId');
 
-router.route('/')
-.post( checkAuth, (req,res) => {
-    sendResponse(req,res);
-});
+module.exports.getShortUrl = (req,res) => {
+    const {sUrlCode} = req.params;
+    Url.findOne({_id:sUrlCode})
+        .then(url => {
+            if(!url) res.status(404).json({msg:'No shrot URL exists for the link'});
+            else res.redirect(url.longUrl);
+        })
+        .catch(err => console.error(err)); 
+}
 
-module.exports = router;
-
-async function sendResponse(req,res) {
+module.exports.shortenUrl = async (req,res) => {
     const {longUrl} = req.body;
     if(isValidURL(longUrl)) {
         try{

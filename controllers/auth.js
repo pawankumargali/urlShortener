@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-module.exports = (req, res, next) => {
+module.exports.isAuth = (req, res, next) => {
         const authHeader = req.header('Authorization');
         if(!authHeader) res.status(401).json({msg:'Unauthenticated request. Please register and login'});
         const token = authHeader.split(' ');

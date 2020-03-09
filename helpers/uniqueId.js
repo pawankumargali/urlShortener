@@ -1,4 +1,4 @@
-const Counter = require('./models/counter');
+const Counter = require('../models/counter');
 
 // counters collection has a single counter => can fetched by findOne() without specifying any criteria
 module.exports = async function() {

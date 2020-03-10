@@ -1,5 +1,5 @@
 ## Request Routes
-![alt](https://ibb.co/6XDcVwz)<br>
+![alt](https://i.ibb.co/XYFfNL1/Capture1.png)<br>
 
 ### 1. api/user
 #### a. api/user/signup

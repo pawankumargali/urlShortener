@@ -27,17 +27,17 @@ Make GET request to url/{shortUrlCode} to get the response webpage<br>
 ![alt](https://i.ibb.co/8XWQ10W/geturl.png)
 
 #### Dependencies
-![alt](https://i.ibb.co/0nVZXJg/Capture7.png)<br>
+![alt](https://i.ibb.co/0nVZXJg/Capture7.png)
 
-#### Database Snapshot:
-![alt](https://i.ibb.co/kJkk2tM/Capture8.png)<br>
+#### Database Snapshot:<br>
+![alt](https://i.ibb.co/kJkk2tM/Capture8.png)
 
-* User Collection
-![alt](https://i.ibb.co/Y3Hf2hh/Capture9.png)<br>
+* User Collection<br>
+![alt](https://i.ibb.co/Y3Hf2hh/Capture9.png)
 
-* URL collection 
-![alt](https://i.ibb.co/h9DPdkF/Capture10.png)<br>
+* URL collection<br>
+![alt](https://i.ibb.co/h9DPdkF/Capture10.png)
 
-* Counter collection
-![alt](https://i.ibb.co/vPFgFwY/Capture11.png)<br>
+* Counter collection<br>
+![alt](https://i.ibb.co/vPFgFwY/Capture11.png)
 
